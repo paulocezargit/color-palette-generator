@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512.0px"
+   height="512.0px"
+   viewBox="0 0 512.0 512.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="icone-generate-palette.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview829"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.40000439"
+     inkscape:cx="57.499368"
+     inkscape:cy="409.9955"
+     inkscape:window-width="1440"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid892" />
+  </sodipodi:namedview>
+  <defs
+     id="defs824" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#d40055;stroke-width:60.596;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
+       id="rect939"
+       width="139.13043"
+       height="440"
+       x="16"
+       y="40"
+       ry="20" />
+    <rect
+       style="opacity:1;fill:#88aa00;stroke-width:60.596;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
+       id="rect939-9"
+       width="139.13043"
+       height="440"
+       x="186.43478"
+       y="40"
+       ry="20" />
+    <rect
+       style="fill:#37abc8;stroke-width:60.596;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
+       id="rect939-9-8"
+       width="139.13043"
+       height="440"
+       x="356.86957"
+       y="40"
+       ry="20" />
+  </g>
+</svg>
