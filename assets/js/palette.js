@@ -25,7 +25,7 @@ function RgbColor() {
     return `rgb(${red}, ${green}, ${blue})`;
 }
 
-function mHslColor() {
+function mHslColor(){
     // Function to generate a random HSL color
     function getRandomValue(max) {
         return Math.floor(Math.random() * max); // Generates a random value up to the max
@@ -37,3 +37,24 @@ function mHslColor() {
 
     return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 }
+
+
+function RandomColor(){
+
+    const elements = document.getElementsByClassName('cpg-page-palettes-item');
+
+    for (let i = 0; i < elements.length; i++) {
+
+        const color = HexColor();
+        elements[i].style.backgroundColor = color;
+        const innerDiv = elements[i].getElementsByTagName('div')[0];
+
+        if (innerDiv) {
+            innerDiv.textContent = color;
+        }
+
+    }
+
+}
+
+RandomColor();
