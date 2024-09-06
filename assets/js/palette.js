@@ -38,6 +38,53 @@ function mHslColor(){
     return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 }
 
+function hexToRgb(hex) {
+    // Remove the hash at the start if present
+    hex = hex.replace(/^#/, '');
+
+    // Convert hexadecimal color to RGB components
+    let r = parseInt(hex.substring(0, 2), 16);
+    let g = parseInt(hex.substring(2, 4), 16);
+    let b = parseInt(hex.substring(4, 6), 16);
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+function hexToHsl(hex) {
+    // Remove the hash at the start if present
+    hex = hex.replace(/^#/, '');
+
+    // Convert hexadecimal color to RGB components
+    let r = parseInt(hex.substring(0, 2), 16) / 255;
+    let g = parseInt(hex.substring(2, 4), 16) / 255;
+    let b = parseInt(hex.substring(4, 6), 16) / 255;
+
+    // Find the maximum and minimum values of the RGB components
+    let max = Math.max(r, g, b);
+    let min = Math.min(r, g, b);
+    let h, s, l = (max + min) / 2;
+
+    if (max === min) {
+        h = s = 0; // Achromatic
+    } else {
+        let d = max - min;
+        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+        switch (max) {
+            case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+            case g: h = (b - r) / d + 2; break;
+            case b: h = (r - g) / d + 4; break;
+        }
+        h /= 6;
+    }
+
+    // Convert saturation and lightness to percentages
+    s *= 100;
+    l *= 100;
+    h *= 360;
+
+    return `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+}
+
 
 function RandomColor(){
 
@@ -50,7 +97,7 @@ function RandomColor(){
         const innerDiv = elements[i].getElementsByTagName('div')[0];
 
         if (innerDiv) {
-            innerDiv.textContent = color;
+            innerDiv.innerHTML = "HEX: " + color + "<br>RGB: " + hexToRgb(color) + "<br>HSL: " + hexToHsl(color);
         }
 
     }

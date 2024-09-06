@@ -37,9 +37,10 @@ body{
 }
 
 .cpg-page-palettes-color{
-	font-size: 50px;
+	font-size: 40px;
 	color: #fff;
 	font-weight: 800;
+	text-shadow: 2px 2px 1px  rgba(0, 0, 0, .4);
 }
 
 .cpg-page-actions{
@@ -57,7 +58,8 @@ body{
 }
 
 .cpg-page-actions-icon{
-
+   width: 128px;
+   height: 128px;
 }
 
 .cpg-page-actions-box-text{
