@@ -6,8 +6,18 @@ body{
 	font-family: "Roboto", sans-serif;
 }
 
-.cpg-itens-center{
+.cpg-no-select{
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
 
+.cpg-itens-center{
+	display: flex;
+	justify-content: center;
 }
 
 .cpg-page{
@@ -24,44 +34,57 @@ body{
 .cpg-page-palettes{
 	width: 100%;
 	height: 100%;
-    display: grid;
-    grid-template-columns: 33.3% 33.4% 33.3%;
+	display: grid;
+	grid-template-columns: 33.3% 33.4% 33.3%;
 }
 
 .cpg-page-palettes-item{
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .cpg-page-palettes-color{
 	font-size: 40px;
-	color: #fff;
+	color: rgba(255, 255, 255, 1.0);
 	font-weight: 800;
 	text-shadow: 2px 2px 1px  rgba(0, 0, 0, .4);
 }
 
 .cpg-page-actions{
-   background-color: #333;
-   width: 100%;
-   height: 250px;
+	background-color: #111;
+	width: 100%;
+	
 }
 
 .cpg-page-actions-box{
-
+	display: flex;
 }
 
 .cpg-page-actions-item{
+	padding: 25px;
+	border-right: 1px solid rgba(255, 255, 255, .1);
+	cursor: pointer;
+}
 
+.cpg-page-actions-item:hover{
+	background-color: rgba(255, 255, 255, .05);
+}
+
+.cpg-page-actions-item:active{
+	background-color: rgba(255, 255, 255, .1);
 }
 
 .cpg-page-actions-icon{
-   width: 128px;
-   height: 128px;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	padding-top: 0px;
 }
 
 .cpg-page-actions-box-text{
-
+	color: #fff;
+	text-align: center;
 }
