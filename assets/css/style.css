@@ -34,20 +34,21 @@ body{
 .cpg-page-palettes{
 	width: 100%;
 	height: 100%;
-	display: grid;
-	grid-template-columns: 33.3% 33.4% 33.3%;
+	display: flex;
+	
 }
 
 .cpg-page-palettes-item{
 	width: 100%;
 	height: 100%;
+	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .cpg-page-palettes-color{
-	font-size: 40px;
+	font-size: 200%;
 	color: rgba(255, 255, 255, 1.0);
 	font-weight: 800;
 	text-shadow: 2px 2px 1px  rgba(0, 0, 0, .4);
