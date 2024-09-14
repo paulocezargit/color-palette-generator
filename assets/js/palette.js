@@ -105,6 +105,24 @@ function RandomColor(){
 
 }
 
+function AddColorItem(){
+
+	const elements = document.getElementsByClassName('cpg-page-palettes-item');
+
+    const lastElement = elements[elements.length - 1]; // Accesses the most recently created element
+
+    if (lastElement) {
+        const color = HexColor();
+        lastElement.style.backgroundColor = color;
+        const innerDiv = lastElement.getElementsByTagName('div')[0];
+
+        if (innerDiv) {
+            innerDiv.innerHTML = "HEX: " + color + "<br>RGB: " + hexToRgb(color) + "<br>HSL: " + hexToHsl(color);
+        }
+    }
+
+}
+
 
 function addPaletteItem() {
 
@@ -120,7 +138,7 @@ function addPaletteItem() {
     newPaletteItem.appendChild(newPaletteColor);
     palettesContainer.appendChild(newPaletteItem);
     
-    RandomColor();
+    AddColorItem();
 
 }
 

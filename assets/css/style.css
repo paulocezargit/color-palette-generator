@@ -35,7 +35,7 @@ body{
 	width: 100%;
 	height: 100%;
 	display: flex;
-	
+	box-sizing: border-box;
 }
 
 .cpg-page-palettes-item{
@@ -45,6 +45,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-sizing: border-box;
 }
 
 .cpg-page-palettes-color{
