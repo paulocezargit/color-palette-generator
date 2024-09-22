@@ -1,3 +1,5 @@
+let total_palette = 4;
+
 function HexColor() {
     // Function to generate a random hex color in the format #ff99ff
 	function getRandomHex() {
@@ -93,6 +95,7 @@ function RandomColor(){
 
 	for (let i = 0; i < elements.length; i++) {
 
+
 		const color = HexColor();
 		elements[i].style.backgroundColor = color;
 		const innerDiv = elements[i].getElementsByTagName('div')[0];
@@ -157,11 +160,25 @@ document.querySelector("#generate-palette").addEventListener("click", () => {
 });
 
 document.querySelector("#add-palette").addEventListener("click", () => {
-	addPaletteItem();
+
+	if(total_palette < 10){
+
+        addPaletteItem();
+        total_palette++;
+
+    }
+
 });
 
 document.querySelector("#remove-palette").addEventListener("click", () => {
-	removePaletteItem();
+
+	if(total_palette > 1){
+
+        removePaletteItem();
+        total_palette--;
+
+    }
+
 });
 
 RandomColor();
